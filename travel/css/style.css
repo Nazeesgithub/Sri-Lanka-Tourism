@@ -1,0 +1,1255 @@
+/*================= Styling--index.html=========== */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; 
+}
+
+/* Background Styling */
+.background {
+    background-image: url('images/sigiri.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(138, 177, 216, 0.271);
+  
+}
+
+header .logo img {
+    height: 70px;
+    width: 70px;
+
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #c9d2d3;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: rgb(39, 171, 134);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color:#0a4e50; 
+}
+
+/* Intro Text Styling */
+.intro-text {
+    position: absolute;
+    top: 30%;
+    left: 40px;
+    color: #294707fe;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.intro-text h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.intro-text p {
+    font-size: 24px;
+    margin: 10px 0 0;
+    color: rgb(200, 197, 183);
+}
+
+/* Container Scroll Styling */
+.container-scroll {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    width: 300px;
+   
+    overflow-x: auto; /* Enables horizontal scrolling */
+    display: flex;
+    scroll-snap-type: x mandatory; /* Enables snapping */
+}
+
+/* Scrollbar Styling */
+.container-scroll::-webkit-scrollbar {
+    width: 2px; /* Width of the scrollbar */
+    
+}
+
+.container-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.7); /* Color and opacity of the scrollbar thumb */
+    border-radius: 6px; /* Rounded corners */
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.container-item {
+    flex: 0 0 auto;
+    text-align: center;
+    scroll-snap-align: start; /* Snaps each container item */
+}
+
+.container-item img {
+    width: 280px;
+    height: 300px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 2px solid rgb(179, 162, 104);
+    border: 2px solid rgb(179, 162, 104); /*border for image */
+}
+
+.container-item p {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+
+
+
+/* Enquiry Button */
+.enquiry-button {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.enquiry-button a {
+    text-decoration: none;
+    font-family:sans-serif;
+    background-color: #f9a825;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.enquiry-button a:hover {
+    background-color: #e2a03e;
+}
+
+.enquiry-button a:active {
+    background-color: rgb(173, 16, 16); /* Change color to red when clicked */
+}
+
+/*=============*/
+/* Style for the Feedback Popup */
+.feedback-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: none; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /*floating above the elemnts in the  content 
+}
+
+.feedback-popup:target {
+    display: flex; /* Show the popup when targeted */
+}
+
+.popup-content {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent container */
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Feedback Form Styles */
+.popup-content h2 {
+    margin-top: 0;
+    color: #444;
+}
+
+.popup-content label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.popup-content input[type="text"],
+.popup-content input[type="email"],
+.popup-content textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.popup-content textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.popup-content button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #466d08;
+}
+
+
+
+
+
+
+
+/*=====================================about us-====================================================================================================*/
+/* General Background for Index and About Us */
+body, .about-us-section {
+    background-image: url('images/sigiri.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+/* Specific About Us Section Styling */
+.about-us-section {
+    position: relative;
+    padding: 50px 20px;
+}
+
+
+
+.transparent-container {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(185, 172, 172, 0.85);
+    opacity: 0.8;
+    padding: 20px;
+    border-radius: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Container Styling */
+.about-us-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.about-us-image {
+    flex: 1 1 45%; /* Two images per row */
+    max-width: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-us-image img {
+    width: 100%;
+    height: auto;
+}
+
+.about-us-text{
+    font-family: sans-serif;
+    
+}
+
+
+/* Back Button Styling */
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f4c542;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    background-color: #d4a036; /* Darker shade on hover */
+    color: white;
+}
+
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(152, 166, 177, 0.271);
+  
+}
+
+header .logo img {
+    height: 50px;
+    width: 50px;
+
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #815d09;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #0a4665; /* A highlight color on hover */
+}
+
+
+/*=========================================================pakages page styling==================================================*/
+/* General Background for Packages Page */
+body, .packages-section {
+    background-image: url('images/sigiri.jpg'); /* Use the same background image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(180, 206, 226, 0.271);
+  
+}
+
+header .logo img {
+    height: 50px;
+    width: 50px;
+
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #815d09;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color:#0e627c; /* A highlight color on hover */
+}
+
+/* Packages Section Styling */
+.packages-section {
+    padding: 50px 20px;
+    color: #f0f0f0;
+    text-align: center;
+
+}
+
+.packages-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+/* Package Container Styling */
+.package-container {
+    background-color: rgba(163, 157, 157, 0.8); /* Light transparent background */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    height: 500px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Ensure content stays within the container */
+}
+
+.package-container h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Wildlife Images Section */
+.wildlife-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Individual Image Container Styling */
+.image-container {
+    flex: 1;
+    margin: 0 5px; /* Spacing between images */
+    text-align: center;
+    padding:10px;
+}
+.image-container p {
+    margin: 5px 0;
+}
+.image-container img {
+    width: 100%;
+    border-radius: 10px;
+    flex: 1;
+    margin: 0 5px; /* Spacing between images */
+    padding: 10px; /* Extra padding for added info */
+    text-align: center;
+}
+
+
+
+
+.rating {
+    font-size: 1.2em;
+    color: #FFD700; /* Gold color for star ratings */
+    margin: 5px 0;
+}
+
+.price {
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+
+/* Back Button Styling for packages*/
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f4c542;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    background-color: #d4a036; /* Darker shade on hover */
+    color: white;
+}
+
+
+
+/* Style for the Feedback Popup */
+.feedback-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none; /* Hidden by default */
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.feedback-popup:target {
+    display: flex; 
+}
+
+.popup-content {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #333;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+/* Feedback Form Styles */
+.popup-content h2 {
+    margin-top: 0;
+    color: #444;
+}
+
+.popup-content label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.popup-content input[type="text"],
+.popup-content input[type="email"],
+.popup-content textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+.popup-content textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.popup-content button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background-color: #666;
+}
+
+
+
+
+/*=================================enquiry page styling==============================*/
+/* Enquiry Page Styles */
+.enquiry-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.transparent-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    opacity: 0.9;
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    height:fit-content;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green color */
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: red; /* Change to red on hover */
+}
+
+
+
+/* Back Button Styling for packages*/
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f4c542;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    background-color: #d4a036; /* Darker shade on hover */
+    color: white;
+}
+
+
+
+
+/* ========== Destinations Page Styling ========== */
+
+/* Styling for Index and Destinations */
+body, .destinations-section {
+    background-image: url('images/sigiri.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Set a default sans-serif font */
+    color:rgb(172, 111, 26);
+}    
+
+/* Destinations Section Container */
+.destinations-section {
+    position: relative;
+    padding: 50px 20px;
+}
+
+/* Transparent Container for Destinations Page Content */
+.transparent-container {
+    background-color: rgba(185, 172, 172, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+
+/* Video Background Container */
+.video-background-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background-size: cover; 
+    background-position: center;
+    position: relative;
+}
+
+/* Transparent Video Container */
+.video-transparent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px; /* Padding around the video */
+    background-color: rgba(211, 182, 182, 0.493); /* Semi-transparent white */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15); /* Optional shadow for depth */
+    max-width: 800px; /* Set maximum width */
+    width: 100%; /* Full width */
+}
+
+/* Video Container */
+.video-container {
+    position: relative;
+    width: 100%; /* Fill the width of the parent */
+    height: 0;
+    padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio */
+    overflow: hidden;
+}
+
+/* Video Iframe */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Removes border */
+}
+
+/* Video Description */
+.video-description {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+
+    
+}
+
+/* Individual Destination Container */
+.destination-container {
+    display: inline-block;
+    width: 45%; /* Adjust for responsive layout */
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+/* Destination Image Styling */
+.destination-image {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.destination-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Description Styling for Destinations */
+.destination-container p {
+    font-size: 16px;
+    color: #333;
+    margin: 10px 0 0 0;
+}
+
+/* Custom Note for Inquiry */
+.custom-note {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.custom-note a {
+   
+    text-decoration: none;
+    font-weight: bold;
+    font-family:serif;
+    color:rgb(100, 24, 24);
+  
+}
+
+.custom-note a:hover {
+    text-decoration: underline;
+}
+
+
+/*===enquiry page styling-====*/
+/* Enquiry Page Styles */
+.enquiry-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.transparent-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    opacity: 0.9;
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    height:fit-content;
+    margin: 0 auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #b18413; /* Green color */
+    color: white;
+    transition: background-color 0.3s ease;
+   
+}
+
+button:hover {
+    background-color: red; /* Change to red on hover */
+}
+
+
+
+/* Back Button Styling */
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f4c542;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    background-color: #d4a036; /* Darker shade on hover */
+    color: white;
+}
+
+
+
+/* ========== End of Destinations Page Styling ========== */
+
+
+
+
+/* ========== Sign In Page Styling ========== */
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(138, 177, 216, 0.271);
+  
+}
+
+header .logo img {
+    height: 70px;
+    width: 70px;
+
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #815d09;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color:#a6811d; /* A highlight color on hover */
+}
+
+/* General Background for Index, About Us, and Sign In */
+body, .signin-section {
+    background-image: url('images/sigiri.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sign In Section */
+.signin-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+/* Transparent Container for Sign In Form */
+.signin-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Sign In Form Styling */
+.signin-form label {
+    display: block;
+    font-size: 16px;
+    margin-top: 15px;
+    color: #333;
+}
+
+.signin-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.signin-button, .reset-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signin-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.signin-button:hover {
+    background-color: #45a049;
+}
+
+.reset-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.reset-button:hover {
+    background-color: #e53935;
+}
+
+.signup-prompt {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signup-prompt a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signup-prompt a:hover {
+    text-decoration: underline;
+}
+
+
+/* Back Button Styling */
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f4c542;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    background-color: #d4a036; /* Darker shade on hover */
+    color: white;
+}
+
+/* ========== End of Sign In Page Styling ========== */
+
+
+
+
+/* ========== Sign Up Page Styling ========== */
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: rgba(138, 177, 216, 0.271);
+  
+}
+
+header .logo img {
+    height: 70px;
+    width: 70px;
+
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #815d09;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color:#a6811d; /* A highlight color on hover */
+}
+
+
+
+/* General Background for Sign Up Page */
+body, .signup-section {
+    background-image: url('images/sigiri.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Sign Up Section */
+.signup-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 20px;
+}
+
+/* Transparent Container for Sign Up Form */
+.signup-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Sign Up Form Styling */
+.signup-form label {
+    display: block;
+    font-size: 16px;
+    margin-top: 15px;
+    color: #333;
+}
+
+.signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.signup-button, .reset-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.signup-button:hover {
+    background-color: #45a049;
+}
+
+.reset-button {
+    background-color: #f44336;
+    color: white;
+}
+
+.reset-button:hover {
+    background-color: #e53935;
+}
+
+.signin-prompt {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.signin-prompt a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.signin-prompt a:hover {
+    text-decoration: underline;
+}
+
+
+/* Back Button Styling */
+.back-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f4c542;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    background-color: #d4a036; /* Darker shade on hover */
+    color: white;
+}
+
+/* ========== End of Sign Up Page Styling ========== */
+
+
+
+
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PearlsEscape.lk - Sign Up</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="logo">
+            <a href="images/logo.jpg" download="PearlsEscape_Logo.jpg">
+            <img src="images/logo.jpg" alt="PearlsEscape.lk Logo">
+        </a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <!--<a href="#search">Search</a> -->
+            <a href="about.html">About Us</a>
+            <a href="https://www.lovesrilanka.org/journal/" >Blog</a>
+            <!--contact button-->
+            <a href="about.html#contact-info">Contact</a>
+
+            <a href="signuppage.html">Sign In/Sign Up</a>
+        </nav>
+    </header>
+        </div>
+
+
+    <div class="signup-section">
+        <div class="signup-container">
+            <h1>Create Your Account</h1>
+            <p>Join PearlsEscape.lk and start your journey today!</p>
+            
+            <form action="auth.php" method="post" class="signup-form">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <div class="button-group">
+                    <button type="submit" name="signup" class="signup-button">Sign Up</button>
+                    <button type="reset" class="reset-button">Reset</button>
+                </div>
+            </form>
+            <p>Already have an account? <a href="signin.html">Sign In</a></p>
+        </div>
+    </div>
+    <a href="index.html" class="back-button">Back to Home</a>
+</body>
+</html>
